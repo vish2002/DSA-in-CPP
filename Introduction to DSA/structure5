@@ -1,0 +1,30 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+struct  rectangle
+{
+    int length;
+    int breadth;
+};
+void initialize(struct rectangle *r,int l,int b){
+    r->length=l;
+    r->breadth=b;
+}
+int area(struct rectangle r){
+    retun r.length*r.breadth;
+}
+int perimeter(struct rectangle r){
+    int p;
+    p=2*(r.length+r.breadth);
+    return p;
+}
+int main(){
+    rectangle r={0,0};
+    int l,b;
+    printf("enter the value of l and b\n");
+    cin>>l>>b;
+
+    initialize(&r,l,b);
+    printf("Enter Length and Breadth");
+    cin>>r.length>>r.breadth;
+}

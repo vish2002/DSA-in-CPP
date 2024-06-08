@@ -1,0 +1,1 @@
+// using bitwise operator method
